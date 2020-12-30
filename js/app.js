@@ -79,7 +79,7 @@ while(continueGuess){
         validAnswerCount++;
     answerValid=false;
     // third question validation
-    var ans3=parseInt(prompt("write a primary number less than 10 and accept division by 3 with no Remainder"));
+    var ans3=parseInt(prompt("write a  number less than 10 and accept division by 3 with no Remainder"));
     for(var i=0;i<arr2.length;i++){//validation
           if(ans3==arr3[i]){
               answerValid=true;
