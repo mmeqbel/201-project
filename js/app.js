@@ -1,7 +1,7 @@
 'use strict'
 
 
-/*var userName=prompt("Tell me your name please ");
+var userName=prompt("Tell me your name please ");
 alert("Welcome "+userName+" to my page ");
 var firstAnswer=prompt("is motasem meqbel my name ? [y,n]");
 //console.log(firstAnswer);
@@ -18,7 +18,7 @@ var fourthAnswer=prompt("Do i like online teaching ? [y,n]");
 var fifthAnswer=prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
 //console.log(fifthAnswer);
 (fifthAnswer.toLowerCase()=="y") ? alert("Exactly ") : alert("mmm , i guess you  never know me");
-*/
+
 var number = 5;
 var userGuess=parseInt(prompt("guess number between 1 and 10"));
 const maxAttempt=5;
