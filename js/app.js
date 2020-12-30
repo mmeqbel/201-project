@@ -1,129 +1,152 @@
 'use strict'
 
+var count = 0;
 
-var userName=prompt("Tell me your name please ");
-alert("Welcome "+userName+" to my page ");
 
-var firstAnswer=prompt("is motasem meqbel my name ? [y,n]");
-while(firstAnswer!="y" && firstAnswer!=="n" ) {
-    firstAnswer=prompt("is motasem meqbel my name ? [y,n]");
+function name1() {
+    var userName = prompt("Tell me your name please ");
+    alert("Welcome " + userName + " to my page ");
 }
-//console.log(firstAnswer);
-(firstAnswer.toLowerCase()=="y") ? alert("mmm , exactly , you know my name ") : alert("mmm , however my name is motasem mrqbel ") ;
+name1();
 
-var seconedAnswer=prompt("Am i intrested in software developing ? [y,n]");
-while(seconedAnswer!='y' && seconedAnswer!='n'  ) {
-    seconedAnswer=prompt("Am i intrested in software developing ? [y,n]");
+function firstAnswer() {
+    var firstAnswer = prompt("is motasem meqbel my name ? [y,n]");
+    while (firstAnswer != "y" && firstAnswer !== "n") {
+        firstAnswer = prompt("is motasem meqbel my name ? [y,n]");
+    }
+    //console.log(firstAnswer);
+    if (firstAnswer.toLowerCase() == "y") {
+        alert("mmm , exactly , you know my name ");
+        count += 1;
+
+    } else {
+        alert("mmm , however my name is motasem mrqbel ");
+    }
 }
-//console.log(seconedAnswer);
+firstAnswer();
 
-(seconedAnswer.toLowerCase()=="y") ?alert("oops , you know so much thing about me ") : alert("there are nothing else  interst me  ");
+function seconedAnswer() {
+    var seconedAnswer = prompt("Am i intrested in software developing ? [y,n]");
+    while (seconedAnswer != 'y' && seconedAnswer != 'n') {
+        seconedAnswer = prompt("Am i intrested in software developing ? [y,n]");
+    }
+    //console.log(seconedAnswer);
 
-var thirdAnswer=prompt("Do i live jordan ? [y,n]");
-while(thirdAnswer!='y' && thirdAnswer!='n'  ) {
-    thirdAnswer=prompt("Do i live jordan ? [y,n]");
+    if (seconedAnswer.toLowerCase() == "y") {
+
+        alert("oops , you know so much thing about me ");
+        count += 1;
+    } else {
+        alert("there are nothing else  interst me  ");
+
+    }
+
 }
-//console.log(thirdAnswer);
-(thirdAnswer.toLowerCase()=="y") ? alert("mm, ok i  was born in jordan and i have not recived any travel chance yet ") : alert("I wich your answer correct , however i live in jordan");
+seconedAnswer();
 
-var fourthAnswer=prompt("Do i like online teaching ? [y,n]");
-while(fourthAnswer!='y' && fourthAnswer!='n'  ) {
-    fourthAnswer=prompt("Do i like online teaching ? [y,n]");
+
+function thirdAnswer() {
+    var thirdAnswer = prompt("Do i live jordan ? [y,n]");
+    while (thirdAnswer != 'y' && thirdAnswer != 'n') {
+        thirdAnswer = prompt("Do i live jordan ? [y,n]");
+    }
+    //console.log(thirdAnswer);
+    if (thirdAnswer.toLowerCase() == "y") {
+        alert("mm, ok i  was born in jordan and i have not recived any travel chance yet ");
+        count += 1;
+    } else {
+        alert("I wich your answer correct , however i live in jordan");
+
+    }
 }
-//console.log(fourthAnswer);
-(fourthAnswer.toLowerCase()=="y") ? alert("of course i like it , true") : alert("mmm, i like to study and work remotly , try again");
-var fifthAnswer=prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
-while(fifthAnswer!='y' && fifthAnswer!='n'  ) {
-    fifthAnswer=prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
+thirdAnswer();
+
+function fourthAnswer() {
+    var fourthAnswer = prompt("Do i like online teaching ? [y,n]");
+    while (fourthAnswer != 'y' && fourthAnswer != 'n') {
+        fourthAnswer = prompt("Do i like online teaching ? [y,n]");
+    }
+    //console.log(fourthAnswer);
+    if (fourthAnswer.toLowerCase() == "y") {
+        alert("of course i like it , true")
+        count += 1;
+
+    } else {
+        alert("mmm, i like to study and work remotly , try again");
+
+    }
 }
-//console.log(fifthAnswer);
-(fifthAnswer.toLowerCase()=="y") ? alert("Exactly ") : alert("mmm , i guess you  never know me");
+fourthAnswer();
 
-/*
-var number = 5;
-var userGuess=parseInt(prompt("guess number between 1 and 10"));
-const maxAttempt=5;
-var count=0;
+function fifthAnswer() {
+    var fifthAnswer = prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
+    while (fifthAnswer != 'y' && fifthAnswer != 'n') {
+        fifthAnswer = prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
+    }
+    //console.log(fifthAnswer);
+    if (fifthAnswer.toLowerCase() == "y") {
+        alert("Exactly ")
+        count += 1;
+    }
 
-while(userGuess != number){
-    if(count==maxAttempt+1){
-        break;
-        alert("false");
-    }//end ef
-    if(userGuess<3)alert("too low");
-    if(userGuess>6)alert("too high");
-   count++;
-   userGuess=parseInt(prompt("guess number between 1 and 10"));
-}//end while
-
-if(userGuess==number) alert("exactly");
-count=0;
-
-var arr1=["red","orange","green","blue","indigo","violet"];//rainbow color
-var arr2=[1,2,3,5,7,9];
-var arr3=[1,3,6,9];
+    else alert("mmm , i guess you  never know me");
+}
+fifthAnswer();
 
 
+function sixthAnswer() {
+    var countAttempt = 0;
+    var number = 5;
+    const maxAttempt = 4;
 
-var continueGuess=true;
-var answerValid=false;
-var validAnswerCount=0;
-while(continueGuess){
-    // first question validation
-    var ans1=prompt("write a rainbow color");
-    count++;
-    if(count==maxAttempt)
-        continueGuess=false;
-    for(var i=0;i<arr1.length;i++){//validation
-            if(ans1.toLowerCase()==arr1[i]){
-                answerValid=true;
-                alert("true");
-                break;
-            }//end if
-    }//end for
-    if(answerValid!=true)
-        alert("false");
-    else 
-        validAnswerCount++;
-    answerValid=false;
-    // seconed question validation
-    var ans2=parseInt(prompt("write a primary number less than 10"));
-    for(var i=0;i<arr2.length;i++){//validation
-            if(ans2==arr2[i]){
-                answerValid=true;
-                alert("true");
-                break;
-            }//end if
-    }//end for
-    if(answerValid!=true)
-        alert("false");
-    else 
-        validAnswerCount++;
-    answerValid=false;
-    // third question validation
-    var ans3=parseInt(prompt("write a primary number less than 10 and accept division by 3 with no Remainder"));
-    for(var i=0;i<arr2.length;i++){//validation
-          if(ans3==arr3[i]){
-              answerValid=true;
-              alert("true");
-                 break;
-             }//end if
-     }//end for
-    if(answerValid!=true)
-        alert("false");
-    else 
-        validAnswerCount++; 
-    answerValid=false;
+    while (countAttempt != maxAttempt) {
+        var userGuess = parseInt(prompt("guess number between 1 and 10"));
+        if (userGuess == number) {
+            alert("exactly");
+            count += 1;
+            break;
+        }//end ef
+        else if (userGuess < 5) {
+            alert("too low");
+        }
+        else if (userGuess > 5) {
+            alert("too high");
+        }
+        countAttempt++;
+    }//end while
+        alert('The correct answer is: ' + number);
+
+
+    }//end fun
+    sixthAnswer();
+
+
+    function sevenAnswer() {
+        var arr2 = [1, 2, 3, 5, 7, 9];
+        var countAttempt = 0;
+        var continue1= true;
+
+        while (countAttempt < 6 && continue1) {
+            var userGuess = parseInt(prompt("guess a primary number less than  20"));
+            for (let i = 0; i < arr2.length; i++) {
+                if (userGuess == arr2[i]) {
+                    alert("That's  Correct");
+                    continue1=false;
+                    count += 1;
+                    break;
+                }
+            
+            } // end for
+            alert('The correct answers are: ' + arr2);
+
+            countAttempt++;
+
+        }//end wh
+        alert('you final score is: ' + count);
     
-    
-}//end while
-
-alert(" great you solve "+validAnswerCount+" question correctly");
-*/
+} // end fun
 
 
-
-
-
+sevenAnswer();
 
 
