@@ -1,0 +1,20 @@
+body {
+    background-color: #efefef;
+}
+nav {
+    background-color: #0077c2;
+}
+
+li {
+    padding-right: 16px;
+    display: inline;
+}
+p {
+font-size: large;
+}
+
+article {
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 2px solid #80d6ff;
+}
