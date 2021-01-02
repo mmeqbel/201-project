@@ -14,7 +14,6 @@ function firstAnswer() {
     while (firstAnswer != "y" && firstAnswer !== "n") {
         firstAnswer = prompt("is motasem meqbel my name ? [y,n]");
     }
-    //console.log(firstAnswer);
     if (firstAnswer.toLowerCase() == "y") {
         alert("mmm , exactly , you know my name ");
         count += 1;
@@ -30,7 +29,6 @@ function seconedAnswer() {
     while (seconedAnswer != 'y' && seconedAnswer != 'n') {
         seconedAnswer = prompt("Am i intrested in software developing ? [y,n]");
     }
-    //console.log(seconedAnswer);
 
     if (seconedAnswer.toLowerCase() == "y") {
 
@@ -50,7 +48,6 @@ function thirdAnswer() {
     while (thirdAnswer != 'y' && thirdAnswer != 'n') {
         thirdAnswer = prompt("Do i live jordan ? [y,n]");
     }
-    //console.log(thirdAnswer);
     if (thirdAnswer.toLowerCase() == "y") {
         alert("mm, ok i  was born in jordan and i have not recived any travel chance yet ");
         count += 1;
@@ -66,7 +63,6 @@ function fourthAnswer() {
     while (fourthAnswer != 'y' && fourthAnswer != 'n') {
         fourthAnswer = prompt("Do i like online teaching ? [y,n]");
     }
-    //console.log(fourthAnswer);
     if (fourthAnswer.toLowerCase() == "y") {
         alert("of course i like it , true")
         count += 1;
@@ -83,7 +79,6 @@ function fifthAnswer() {
     while (fifthAnswer != 'y' && fifthAnswer != 'n') {
         fifthAnswer = prompt("Do i have BA. COMPUTER SCIENCE degree ? [y,n]");
     }
-    //console.log(fifthAnswer);
     if (fifthAnswer.toLowerCase() == "y") {
         alert("Exactly ")
         count += 1;
